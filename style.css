@@ -1,0 +1,16 @@
+header {
+    background-color: #ffcccc;
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between ;
+}
+
+headerButtons{
+    display: flex;
+    flex-direction: column;
+}
+
+header > {
+
+}
