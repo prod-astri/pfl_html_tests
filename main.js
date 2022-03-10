@@ -30,16 +30,9 @@ document.body.onscroll = trackScrolling
 function trackScrolling() {
     let bodyScrolled = document.body.getBoundingClientRect().top
     if (bodyScrolled < -10) {
-        document.getElementsByTagName('header')[0].className = 'closeCorner'
+        document.getElementsByTagName('header')[0].className = 'closeCorner fadeOut'
      } else {
-            document.getElementsByTagName('header')[0].className = 'openCorner'
+            document.getElementsByTagName('header')[0].className = 'openCorner fadeIn'
         }
         manageHeaderSize();
-//     // the value of getBoundingClientRect().top will always be negative
-//     // percentage of the page scrolled
-//     let worldState.scrolledFromTop = bodyScrolled / (textHeight) * -100;
-//     console.log('wstate scrolled:' , worldState.scrolledFromTop)
-    // console.log('bodyscrolled' , bodyScrolled)
-//     // the division factor is arbitrary for now
-//     // camera.position.y = worldState.scrolledFromTop * worldState.max3dHeight / 100
   }
