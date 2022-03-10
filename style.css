@@ -10,17 +10,31 @@ header {
     align-items: center;
     justify-content: space-between ;
     /* flex-wrap: wrap; */
+    transition: 0.5s;
+    clip-path: circle(100% at 100% 0%);
 }
 
-/* header * {
-    transition: 0.4s;
-} */
+header:hover {
+    clip-path: circle(5rem at 100% 0%);
+    transition: 0.5s;
+}
 
-#headerButtons {
+
+
+#burger {
+    margin-inline: 10px
+}
+
+.btn {
     display: flex;
     /* flex-direction: column;/ */
     margin-inline: 10px;
 }
+
+.noDisplay {
+    display: none;
+}
+
 
 #headerText {
     background-color: #ffbbbb;
