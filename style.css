@@ -23,13 +23,13 @@ header {
 
 .closeCorner{
     height: 6rem;
-    clip-path: circle(3em at 97% 50%);
+    clip-path: circle(3em at calc(100% - 3rem) 50%);
     transition: 1s;
 }
 
 
 #burger {
-    margin-inline: 10px;
+    margin-inline: 2.1rem;
 }
 
 .btn {
