@@ -9,12 +9,17 @@ header {
     width: 100%;
     align-items: center;
     justify-content: space-between ;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
+
+/* header * {
+    transition: 0.4s;
+} */
 
 #headerButtons {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column;/ */
+    margin-inline: 10px;
 }
 
 #headerText {
@@ -28,7 +33,13 @@ header {
 
 
 button {
-    margin: 1px;
+    margin: 1px 10px;
     border: none;
     width: 6em;
+    color: red;
+}
+
+button:hover {
+    background-color: aliceblue;
+    color: black;
 }

@@ -1,7 +1,29 @@
-let width = document.body.clientWidth;
+manageHeaderSize()
 
-width < 400 && console.log( document.getElementsByTagName('header')[0].style)
-width < 400 && (document.getElementById('header').style.visibility = 'hidden')
-console.log('blow')
+window.onresize = () => {
+    manageHeaderSize()
+}
 
-console.log(width)
+function manageHeaderSize() {
+    let w = window.innerWidth
+    if (w < 400){
+        document.getElementById('headerButtons').innerHTML = 
+        '<img src="/pictures/burger.svg" id="burger" style="width: 1.8rem"/>'
+    } else if (w >= 400){
+        document.getElementById('headerButtons').innerHTML = 
+        '<button id="statsButton">stats</button>\
+        <button id="starsButton">STARS</button>\
+        <button id="bassButton">B A S S</button>'
+    };
+    if ( w < 630) {
+        document.getElementById('headerButtons').style.flexDirection = 'column'
+    } else if ( w > 630 ){
+        document.getElementById('headerButtons').style.flexDirection = 'row'
+    }
+}
+
+document.getElementById("burger").onclick = function() {
+    console.log('burger')
+};
+
+
