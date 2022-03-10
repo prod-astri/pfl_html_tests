@@ -18,23 +18,25 @@ header {
 
 .openCorner {
     clip-path: circle(110% at 50% 0%);
-    transition: 0.5s;
+    transition: 0.2s ease-out;
 }
 
 .closeCorner{
-    clip-path: circle(5em at 100% 20%);
-    transition: 0.5s;
+    height: 6rem;
+    clip-path: circle(3em at 97% 50%);
+    transition: 1s;
 }
 
 
 #burger {
-    margin-inline: 10px
+    margin-inline: 10px;
 }
 
 .btn {
     display: flex;
     /* flex-direction: column;/ */
-    margin-inline: 10px;
+    margin-left: 10px;
+    margin-right: 2%;
 }
 
 .noDisplay {

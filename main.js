@@ -6,7 +6,8 @@ window.onresize = () => {
 
 function manageHeaderSize() {
     let w = window.innerWidth
-    if (w < 400){
+    if (w < 400 || document.body.getBoundingClientRect().top < -10 ){ 
+        console.log('wo')
         document.getElementById('headerButtons').className = 'btn noDisplay'
         document.getElementById('burger').className = 'live'
     } else if (w >= 400){
@@ -33,11 +34,12 @@ function trackScrolling() {
      } else {
             document.getElementsByTagName('header')[0].className = 'openCorner'
         }
+        manageHeaderSize();
 //     // the value of getBoundingClientRect().top will always be negative
 //     // percentage of the page scrolled
 //     let worldState.scrolledFromTop = bodyScrolled / (textHeight) * -100;
 //     console.log('wstate scrolled:' , worldState.scrolledFromTop)
-    console.log('bodyscrolled' , bodyScrolled)
+    // console.log('bodyscrolled' , bodyScrolled)
 //     // the division factor is arbitrary for now
 //     // camera.position.y = worldState.scrolledFromTop * worldState.max3dHeight / 100
   }
