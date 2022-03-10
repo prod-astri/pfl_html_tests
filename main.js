@@ -9,7 +9,7 @@ function manageHeaderSize() {
     if (w < 400 || document.body.getBoundingClientRect().top < -10 ){ 
         console.log('wo')
         document.getElementById('headerButtons').className = 'btn noDisplay'
-        document.getElementById('burger').className = 'live'
+        document.getElementById('burger').className = 'live '
     } else if (w >= 400){
         document.getElementById('headerButtons').className = 'btn live'
         document.getElementById('burger').className = 'noDisplay'
@@ -30,9 +30,9 @@ document.body.onscroll = trackScrolling
 function trackScrolling() {
     let bodyScrolled = document.body.getBoundingClientRect().top
     if (bodyScrolled < -10) {
-        document.getElementsByTagName('header')[0].className = 'closeCorner fadeOut'
+        document.getElementsByTagName('header')[0].className = ' fadeOut closeCorner'
      } else {
-            document.getElementsByTagName('header')[0].className = 'openCorner fadeIn'
+            document.getElementsByTagName('header')[0].className = 'fadeIn openCorner '
         }
         manageHeaderSize();
   }

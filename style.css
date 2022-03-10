@@ -18,26 +18,27 @@ header {
     /* transition: 1s; */
 }
 
-.openCorner {
-    clip-path: circle(110% at 50% 0%);
-    transition: clip-path 0.2s ease-in ;
-}
-
-.fadeIn {
-    transition: color 2s ease-in ;
-}
 
 .fadeOut {
     color: rgba(0,0,0,0);
     transition: color 2s; 
 }
 
+.fadeIn {
+    transition: 3s ease-in ;
+}
+
+.openCorner {
+    clip-path: circle(110% at 50% 0%);
+    transition: 0.3s ease-in, color 2s ease-in ;
+}
+
 .closeCorner {
     /* background-color: rgba(0,0,0,0); */
-   
+    
     min-height: 6rem;
     clip-path: circle(3em at calc(100% - 3rem) 50%);
-    transition: clip-path 0.8s ease-out; 
+    transition: 0.8s ease-out; 
 }
 
 
