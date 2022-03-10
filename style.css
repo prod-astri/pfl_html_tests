@@ -25,7 +25,7 @@ header {
 }
 
 .fadeIn {
-    transition: 3s ease-in ;
+    transition: color 3s ease-in ;
 }
 
 .openCorner {
