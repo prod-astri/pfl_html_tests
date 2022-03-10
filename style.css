@@ -4,21 +4,27 @@ main {
 }
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
     background-color: #ffcccc;
     display: inline-flex;
     width: 100%;
     align-items: center;
     justify-content: space-between ;
     /* flex-wrap: wrap; */
-    transition: 0.5s;
-    clip-path: circle(100% at 100% 0%);
+    height: 5rem;
 }
 
-header:hover {
-    clip-path: circle(5rem at 100% 0%);
+.openCorner {
+    clip-path: circle(110% at 50% 0%);
     transition: 0.5s;
 }
 
+.closeCorner{
+    clip-path: circle(5em at 100% 20%);
+    transition: 0.5s;
+}
 
 
 #burger {

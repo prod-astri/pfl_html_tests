@@ -28,6 +28,11 @@ document.body.onscroll = trackScrolling
 
 function trackScrolling() {
     let bodyScrolled = document.body.getBoundingClientRect().top
+    if (bodyScrolled < -10) {
+        document.getElementsByTagName('header')[0].className = 'closeCorner'
+     } else {
+            document.getElementsByTagName('header')[0].className = 'openCorner'
+        }
 //     // the value of getBoundingClientRect().top will always be negative
 //     // percentage of the page scrolled
 //     let worldState.scrolledFromTop = bodyScrolled / (textHeight) * -100;
